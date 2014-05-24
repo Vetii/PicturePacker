@@ -1,3 +1,6 @@
+#!/usr/bin/python
+
+
 import re #regexes
 import os #mkdir function
 import sys #command line arguments
