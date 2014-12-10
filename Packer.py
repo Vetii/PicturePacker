@@ -1,6 +1,5 @@
 #!/usr/bin/python
 
-
 import re #regexes
 import os #mkdir function
 import sys #command line arguments
@@ -71,7 +70,6 @@ def get_offset(d_source, d_dest):
     numtimes = math.ceil(d_source / d_dest)
     return max((d_source - d_dest) / numtimes, 0)
 
-
 def process(source, dests, rotable):
     for dest in dests:
         print(dest.width, dest.height)
@@ -79,7 +77,7 @@ def process(source, dests, rotable):
             img = rotate_image(source, dest)
         else:
             img = source
-        crop_and_save(img, dest)
+        crop_and_save(img,dest)
 
 # main
 dimfilter = re.compile('[0-9]+')
